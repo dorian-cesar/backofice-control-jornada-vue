@@ -18,6 +18,7 @@
                 </template>
             </template>
             <router-link to="/Horario/1/"><DashboardItem :icon="'fa-hourglass'" :text="'Control Horario'"></DashboardItem></router-link>
+            <router-link to="/conductoresRegistrados/1/"><DashboardItem :icon="'fa-address-book'" :text="'Conductores Registrados'"></DashboardItem></router-link>
         </div>
     </div>
 </template>

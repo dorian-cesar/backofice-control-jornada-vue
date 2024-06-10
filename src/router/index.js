@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -159,6 +160,17 @@ const router = createRouter({
       path: '/horario',
       redirect: '/horario/'
     },
+    {
+      path: '/conductoresRegistrados/:page/:sort?/:dir?/:query?',
+      name: 'conductoresRegistrados',
+      component: () => import('../views/conductoresRegistrados.vue'),
+      meta: { requiresAuth: true, },
+    },
+    {
+      path: '/condutoresRegistrados',
+      redirect: '/condutoresRegistrados/'
+    },
+    
   ]
 })
 

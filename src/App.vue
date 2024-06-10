@@ -19,7 +19,7 @@ export default {
 	data() {
 		return {
 			navEnable: false,
-        	loadScreen: false,
+        	//loadScreen: false,
         	alertas: [],
 			newAlerta: false,
 			soundCtrl: true,
@@ -33,7 +33,7 @@ export default {
   	components: {
     	Watermark,
     	NavBar,
-        LoadingScreen,
+        //LoadingScreen,
   	},
 	created() {
 		if(localStorage.logs){
